@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #222;
+  color: white;
+  overflow: auto;
+  transition: width 0.3s;
+  padding: 10px;
+}
+
+#sidebar h2 {
+  text-align: center;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+#sidebar li:hover {
+  background-color: #333;
+}
+
+#toggleSidebar {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#controls {
+  background: #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#gameFrame {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
