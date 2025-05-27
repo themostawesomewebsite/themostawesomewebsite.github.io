@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <button id="toggleSidebar">☰</button>
+    <h2>Games</h2>
+    <ul id="gameList">
+      <li onclick="loadGame('games/game1.html')">Game 1</li>
+      <li onclick="loadGame('games/game2.html')">Game 2</li>
+      <!-- Add more games here -->
+    </ul>
+  </div>
+
+  <div id="mainContent">
+    <div id="controls">
+      <button onclick="toggleFullscreen()">🖵 Fullscreen</button>
+      <button onclick="minimizeGame()">🗕 Minimize</button>
+    </div>
+    <iframe id="gameFrame" src="" frameborder="0"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
